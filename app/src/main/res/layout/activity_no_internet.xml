@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/NoInternet_Activity_Srl_Swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:srcCompat="@drawable/ic_no_wifi"
+          android:layout_centerHorizontal="true"
+          android:layout_above="@id/NoInternet_Activity_Tv_text"
+          />
+
+
+
+            <TextView
+            android:id="@+id/NoInternet_Activity_Tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لا يوجد اتصال ب الانترنت"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d20"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s25"
+            />
+            <!--<ImageView-->
+            <!--android:id="@+id/NoInternet_Activity_Iv_Try_Again"-->
+            <!--android:layout_width="@dimen/d50"-->
+            <!--android:layout_height="@dimen/d50"-->
+            <!--android:src="@color/white"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="@dimen/d50"-->
+            <!--android:layout_below="@id/NoInternet_Activity_Tv_text"-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/NoInternet_Activity_Tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسحب لأسفل لإعادة المحاوله"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/d20"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s25"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

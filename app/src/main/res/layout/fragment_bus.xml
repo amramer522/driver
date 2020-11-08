@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Bus_Fragment_Tv_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d20"
+                android:text="اسم السائق : "
+                android:textColor="@color/black"
+                />
+
+            <Switch
+                android:id="@+id/bus_fragment_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_below="@id/Bus_Fragment_Tv_driver_name"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d20"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/bus_fragment_switch"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/d40"
+                android:layout_marginEnd="@dimen/d40"
+                android:textSize="@dimen/s15"
+                android:text="ظهور الباص"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/note_fragment_bus_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bus_fragment_switch"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d40" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/note_fragment_bus_line"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/d40"
+                android:layout_marginEnd="@dimen/d40"
+                android:textSize="@dimen/s15"
+                android:text="خط السير"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/note_fragment_tv_time_moving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note_fragment_bus_line"
+                android:layout_marginStart="@dimen/d60"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d60"
+                android:gravity="center"
+                android:layout_marginBottom="-10dp"
+                android:background="@drawable/shape_radius_corners_orange"
+                android:hint="اضغط لتحديد وقت التحرك"
+                android:padding="@dimen/d15"
+                android:paddingStart="@dimen/d20"
+                android:textColor="@color/white"
+                android:paddingEnd="@dimen/d20"
+                android:textColorHint="@color/white" />
+
+            <Button
+                android:id="@+id/bus_fragment_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note_fragment_tv_time_moving"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d20"
+                android:layout_marginBottom="@dimen/d10"
+                android:background="@drawable/shape_radius_corners_dark_blue"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/bus_fragment_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/bus_fragment_btn_save"
+                android:layout_marginStart="@dimen/d40"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d40"
+                android:background="@color/oragne" />
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/l1"
+            android:layout_below="@id/bus_fragment_line"
+            >
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+            android:id="@+id/bus_fragment_available_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d20"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="عدد الطلاب الموجودين"
+            android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+            android:id="@+id/bus_fragment_rest_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d20"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="عدد الطلاب المتبقيين"
+            android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+            android:id="@+id/bus_fragment_bus_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d20"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=" سعة الاتوبيس"
+            android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/l1"
+                android:layout_marginStart="@dimen/d25"
+                android:layout_marginEnd="@dimen/d25"
+                android:layout_marginTop="@dimen/d90"
+                android:layout_marginBottom="@dimen/d20"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/bus_fragment_call"
+                    android:layout_width="@dimen/d60"
+                    android:layout_height="@dimen/d60"
+                    app:srcCompat="@drawable/ic_call_driver" />
+
+                <TextView
+                    android:id="@+id/bus_fragment_tv_call_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call_admin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

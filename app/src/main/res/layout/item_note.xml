@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d10"
+    android:layout_marginEnd="@dimen/d10"
+    android:layout_marginTop="@dimen/d10"
+    >
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_radius_corners"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item_note_tv_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم المحطه : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/s15"
+                android:layout_marginStart="@dimen/d40"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginEnd="@dimen/d40"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
+                android:id="@+id/item_note_tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_note_tv_station_name"
+                android:text="اسم الطالب : "
+                android:textSize="@dimen/s15"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/d40"
+                android:layout_marginEnd="@dimen/d40"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginBottom="@dimen/d20"
+                android:layout_alignParentEnd="true"
+                />
+
+            <ImageView
+                android:id="@+id/item_note_iv_note_img"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                app:srcCompat="@drawable/ic_notes_map"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d20"
+                android:layout_marginBottom="@dimen/d20"
+                />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:padding="@dimen/d20"
+        android:id="@+id/item_driver_bus_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d40"
+        android:layout_marginTop="-1dp"
+        android:text="انا هركب من عند قرية ميت زنفر من قدام المسجد اللى موجود على اول الطريق هبقى واقف تحت اللوحه اللى مكتوب عليها ميت زنفر "
+        android:layout_below="@id/ll_details"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:background="@drawable/shape_bottom_radius"
+        />
+    <!--<Button-->
+        <!--android:id="@+id/item_driver_bus_reques"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/d200"-->
+        <!--android:text="عرض على الخريطة"-->
+        <!--android:layout_below="@id/item_driver_bus_request"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@drawable/shape_btn"-->
+        <!--/>-->
+    </RelativeLayout>
+
+

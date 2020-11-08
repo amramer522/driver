@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="@dimen/d28"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d10"
+        android:paddingBottom="@dimen/d8">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Item_Home_Civ_User_Image"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginTop="@dimen/d8"
+            android:layout_marginEnd="@dimen/d8" />
+
+
+        <TextView
+            android:id="@+id/Item_Home_Tv_User_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d4"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginEnd="@dimen/d4"
+            android:layout_toEndOf="@id/Item_Home_Civ_User_Image"
+            android:text="@string/amr_bakr"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/Item_Home_Tv_Content_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Item_Home_Civ_User_Image"
+            android:layout_alignStart="@id/Item_Home_Tv_User_Name"
+            android:layout_marginEnd="@dimen/d10"
+            android:textAlignment="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="@dimen/d10"
+            android:text="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/Item_Home_Tv_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginTop="@dimen/d8"
+            android:layout_marginEnd="@dimen/d8"
+            android:text="@string/time"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
